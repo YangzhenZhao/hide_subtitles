@@ -2,9 +2,8 @@
 
 
 
-# publish 
+# generate app 
 
 ```
-npm install electron-builder --dev
-
+npm run dist
 ```
