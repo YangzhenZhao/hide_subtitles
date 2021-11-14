@@ -1,10 +1,12 @@
 {
-  "name": "hide_subtitles",
+  "name": "CoverSubtitles",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -21,9 +23,5 @@
   },
   "devDependencies": {
     "electron-builder": "^22.13.1"
-  },
-  "scripts": {
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
   }
 }
