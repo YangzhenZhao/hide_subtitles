@@ -4,3 +4,13 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+let tobackgroundBlack = true
+document.querySelector("#app").addEventListener('click', () => {
+  if (tobackgroundBlack) {
+    document.querySelector('#app').style.setProperty('background', "black")
+  } else {
+    document.querySelector('#app').style.removeProperty('background')
+  }
+  
+  tobackgroundBlack = !tobackgroundBlack
+})
